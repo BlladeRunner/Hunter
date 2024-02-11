@@ -1,0 +1,16 @@
+.hero {
+  &__navbar {
+    align-items: center;
+  }
+
+  &__nav-menu {
+    align-items: center;
+    nav-item {
+      list-style-type: none;
+    }
+  }
+
+  &__image {
+    background-image: url(/img/image_6.jpg);
+  }
+}
