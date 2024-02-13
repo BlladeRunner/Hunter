@@ -1,5 +1,6 @@
-@import "boilerplate/colors";
-@import "boilerplate/base";
+@import "abstracts/mixins";
+@import "base/colors";
+@import "base/base";
 
 //Layout
 @import "layout/hero";

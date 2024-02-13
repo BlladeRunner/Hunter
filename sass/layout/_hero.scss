@@ -1,16 +1,16 @@
 .hero {
+  background-color: $color-white;
+  padding-top: 40px;
+
   &__navbar {
     align-items: center;
   }
 
   &__nav-menu {
-    align-items: center;
+    text-align: center;
+    list-style-type: none;
     nav-item {
-      list-style-type: none;
+      border-radius: 5px;
     }
-  }
-
-  &__image {
-    background-image: url(/img/image_6.jpg);
   }
 }

@@ -6,9 +6,19 @@
   box-sizing: inherit;
 }
 
-// html {
-//   background-color: $color-white;
-// }
+html {
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
 
 body {
   font-family: "Inter", sans-serif;
@@ -21,6 +31,5 @@ body {
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  background-color: $color-white;
   height: 95vh;
 }
