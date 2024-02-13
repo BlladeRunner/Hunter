@@ -1,6 +1,6 @@
 .hero {
   background-color: $color-white;
-  padding-top: 40px;
+  padding-top: 46px;
 
   &__navbar {
     align-items: center;
@@ -12,5 +12,36 @@
     nav-item {
       border-radius: 5px;
     }
+  }
+  &__image {
+    background-image: url("/img/image_6.jpg");
+    width: 720px;
+    height: 720px;
+  }
+  .heading-primary {
+    font-weight: 200;
+    .green {
+      color: $color-primary;
+    }
+  }
+  .heading-primary-main {
+    display: block;
+    font-weight: 900;
+  }
+  .heading-primary-sub {
+    display: block;
+    font-size: 12px;
+  }
+  &__search {
+    width: 30rem;
+    height: 3rem;
+    border-radius: 2.5rem;
+  }
+  &__partnership {
+    display: block;
+    font-size: 12px;
+  }
+  &__partner-logo {
+    list-style-type: none;
   }
 }
