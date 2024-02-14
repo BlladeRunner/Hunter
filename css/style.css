@@ -26,7 +26,7 @@ html {
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
+  @media (max-width: 40em) {
     html {
       font-size: 50%; } }
   @media (min-width: 112.5em) {
@@ -46,6 +46,9 @@ body {
 .hero {
   background-color: #fff;
   padding-top: 46px; }
+  @media (max-width: 75em) {
+    .hero {
+      max-width: 400px; } }
   .hero__navbar {
     align-items: center; }
   .hero__nav-menu {
@@ -56,23 +59,43 @@ body {
   .hero__image {
     background-image: url("/img/image_6.jpg");
     width: 720px;
-    height: 720px; }
+    height: 720px;
+    margin-bottom: 40px; }
+    @media (max-width: 75em) {
+      .hero__image {
+        width: 450px;
+        height: 450px; } }
   .hero .heading-primary {
     font-weight: 200; }
     .hero .heading-primary .green {
       color: #10b981; }
   .hero .heading-primary-main {
     display: block;
-    font-weight: 900; }
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-align: center; }
   .hero .heading-primary-sub {
     display: block;
-    font-size: 12px; }
+    font-size: 14px;
+    text-align: center; }
   .hero__search {
     width: 496px;
     height: 56px;
-    border-radius: 28px; }
+    border-radius: 28px;
+    margin: 30px 10px; }
+    @media (max-width: 75em) {
+      .hero__search {
+        width: 350px;
+        height: 40px;
+        margin-left: 12px; } }
   .hero__partnership {
     display: block;
-    font-size: 12px; }
+    font-size: 12px;
+    text-align: center; }
+  .hero__partnership-sub {
+    font-size: 18px; }
   .hero__partner-logo {
-    list-style-type: none; }
+    list-style-type: none;
+    display: grid; }
+    .hero__partner-logo img {
+      grid-area: 2 / 2; }

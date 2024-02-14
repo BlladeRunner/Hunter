@@ -1,6 +1,9 @@
 .hero {
   background-color: $color-white;
   padding-top: 46px;
+  @include respond(tab-land) {
+    max-width: 400px;
+  }
 
   &__navbar {
     align-items: center;
@@ -13,35 +16,66 @@
       border-radius: 5px;
     }
   }
+
   &__image {
     background-image: url("/img/image_6.jpg");
     width: 720px;
     height: 720px;
+    margin-bottom: 40px;
+    @include respond(tab-land) {
+      width: 450px;
+      height: 450px;
+    }
   }
+
   .heading-primary {
     font-weight: 200;
     .green {
       color: $color-primary;
     }
   }
+
   .heading-primary-main {
     display: block;
     font-weight: 900;
+    margin-bottom: 20px;
+    text-align: center;
   }
+
   .heading-primary-sub {
     display: block;
-    font-size: 12px;
+    font-size: 14px;
+    text-align: center;
   }
+
   &__search {
     width: 496px;
     height: 56px;
     border-radius: 28px;
+    margin: 30px 10px;
+    @include respond(tab-land) {
+      width: 350px;
+      height: 40px;
+      margin-left: 12px;
+    }
   }
+
   &__partnership {
     display: block;
     font-size: 12px;
+    text-align: center;
   }
+
+  &__partnership-sub {
+    font-size: 18px;
+  }
+
   &__partner-logo {
     list-style-type: none;
+    display: grid;
+    img {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
   }
 }

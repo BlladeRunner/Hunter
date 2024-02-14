@@ -18,13 +18,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media (max-width: 37.5em) {
+    @media (max-width: 20em) {
       //600px
       @content;
     }
   }
   @if $breakpoint == tab-port {
-    @media (max-width: 56.25em) {
+    @media (max-width: 40em) {
       //900px
       @content;
     }
