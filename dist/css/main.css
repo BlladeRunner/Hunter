@@ -95,6 +95,8 @@ body {
     height: 8px;
     background-color: #333;
     border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity 200ms ease-in-out, width 200ms ease-in-out, rotate 200ms ease-in-out, translate 200ms ease-in-out, background-color 200ms ease-in-out;
   }
   .hero__hamburger-menu input {
     appearance: none;
@@ -102,6 +104,20 @@ body {
     margin: 0;
     outline: none;
     pointer-events: none;
+  }
+  .hero__hamburger-menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: 229.1025971039px;
+    translate: 0 -4px;
+  }
+  .hero__hamburger-menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: 229.1025971039px;
+    translate: 0 4px;
+  }
+  .hero__hamburger-menu input:checked {
+    opacity: 0;
+    width: 0;
   }
 }
 .hero__image {
@@ -113,8 +129,8 @@ body {
 @media (max-width: 75em) {
   .hero__image {
     display: relative;
-    width: 450px;
-    height: 450px;
+    max-width: 375px;
+    max-height: 450px;
   }
 }
 .hero .heading-primary {

@@ -1,4 +1,6 @@
 $hamburger-margin: 30px;
+$hamburger-heigt: calc(50px * 3 + 6px * 2);
+$animation-timing: 200ms ease-in-out;
 
 .hero {
   background-color: $color-white;
@@ -21,12 +23,12 @@ $hamburger-margin: 30px;
   }
 
   &__hamburger-menu {
-    // text-align: center;
     list-style-type: none;
     nav-links {
       border-radius: 5px;
     }
     @include respond(tab-land) {
+      $x-width: calc($hamburger-heigt * 1.41421356237);
       display: grid;
       gap: 6px;
       width: max-content;
@@ -43,6 +45,11 @@ $hamburger-margin: 30px;
         height: 8px;
         background-color: #333;
         border-radius: 9999px;
+        transform-origin: left center;
+
+        transition: opacity $animation-timing, width $animation-timing,
+          rotate $animation-timing, translate $animation-timing,
+          background-color $animation-timing;
       }
       input {
         appearance: none;
@@ -50,6 +57,20 @@ $hamburger-margin: 30px;
         margin: 0;
         outline: none;
         pointer-events: none;
+      }
+      &:has(input:checked)::before {
+        rotate: 45deg;
+        width: $x-width;
+        translate: 0 calc(8px / -2);
+      }
+      &:has(input:checked)::after {
+        rotate: -45deg;
+        width: $x-width;
+        translate: 0 calc(8px / 2);
+      }
+      input:checked {
+        opacity: 0;
+        width: 0;
       }
     }
   }
@@ -61,8 +82,8 @@ $hamburger-margin: 30px;
     margin-bottom: 40px;
     @include respond(tab-land) {
       display: relative;
-      width: 450px;
-      height: 450px;
+      max-width: 375px;
+      max-height: 450px;
     }
   }
 
