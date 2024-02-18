@@ -4,10 +4,12 @@ $animation-timing: 200ms ease-in-out;
 
 .hero {
   background-color: $color-white;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   @include respond(tab-land) {
     max-width: 375px;
     padding-top: 0;
+    display: 0;
   }
 
   &__navbar {
@@ -15,6 +17,10 @@ $animation-timing: 200ms ease-in-out;
   }
 
   &__logo {
+    position: absolute;
+    z-index: 1;
+    top: $hamburger-margin;
+    // top: $hamburger-margin;
     @include respond(tab-land) {
       position: absolute;
       top: $hamburger-margin;
@@ -24,7 +30,8 @@ $animation-timing: 200ms ease-in-out;
 
   &__hamburger-menu {
     list-style-type: none;
-
+    position: absolute;
+    z-index: 1;
     @include respond(tab-land) {
       $x-width: calc($hamburger-heigt * 1.41421356237);
       display: grid;
@@ -37,7 +44,6 @@ $animation-timing: 200ms ease-in-out;
       cursor: pointer;
       &:has(input:checked) {
         background-color: #333;
-        ////////////////////
       }
       &:has(input:focus-visible)::before,
       &:has(input:focus-visible)::after,
@@ -87,6 +93,11 @@ $animation-timing: 200ms ease-in-out;
   }
 
   .hero__sidebar {
+    position: absolute;
+    display: flex;
+    a {
+      justify-content: center;
+    }
     @include respond(tab-land) {
       transition: translate $animation-timing;
       // translate: -100%;
@@ -105,13 +116,32 @@ $animation-timing: 200ms ease-in-out;
     }
   }
 
+  &__reviews {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: -25px;
+    bottom: 160px;
+    right: 380px;
+    @include respond(tab-land) {
+      bottom: 260px;
+      left: 380px;
+    }
+  }
+
+  &__review-1 {
+    @include respond(tab-land) {
+      width: 150px;
+    }
+  }
+
   &__image {
     background-image: url("/img/image_6.jpg");
-    width: 720px;
     height: 720px;
     margin-bottom: 40px;
+    left: 0;
     @include respond(tab-land) {
-      display: relative;
+      position: relative;
       max-width: 375px;
       max-height: 450px;
     }
@@ -125,10 +155,12 @@ $animation-timing: 200ms ease-in-out;
   }
 
   .heading-primary-main {
-    display: block;
     font-weight: 900;
     margin-bottom: 20px;
     text-align: center;
+    @include respond(tab-land) {
+      display: block;
+    }
   }
 
   .heading-primary-sub {
