@@ -1,44 +1,28 @@
-// MEDIA QUERY MANAGER
-/*
-0 - 600px: Phone
-600px - 900px : Tablet portrait
-900px - 1200px : Tablet lanscape
-[1200 - 1800 is where our normal styles apply]
-1800px > Big Desktop
+@media (min-width: 64em) {
+}
 
-$breakpoint argument choices::after
-- phone
-- tab-port
-- tab-land
-- big-desktop
+// 640px, 1024px, 1400px
+$breakpoints-up: (
+  "medium": "40em",
+  "large": "64em",
+  "xlarge": "87.5em",
+);
 
-ORDER: Base + typography > general layout + grid > page layout > components
+// 639px, 1023px, 1399px
+$breakpoints-down: (
+  "small": "39.94em",
+  "medium": "63.9em",
+  "large": "87.5em",
+);
 
-*/
-
-@mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media (max-width: 20em) {
-      //600px
-      @content;
-    }
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
   }
-  @if $breakpoint == tab-port {
-    @media (max-width: 40em) {
-      //900px
-      @content;
-    }
-  }
-  @if $breakpoint == tab-land {
-    @media (max-width: 75em) {
-      //1200px
-      @content;
-    }
-  }
-  @if $breakpoint == big-desktop {
-    @media (min-width: 112.5em) {
-      //1800px
-      @content;
-    }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
   }
 }

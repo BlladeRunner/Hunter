@@ -1,8 +1,11 @@
-document
-  .querySelector(".hero__hamburger-button")
-  .addEventListener("click", function () {
-    document.querySelector(".nav-links").style.display =
-      document.querySelector(".nav-links").style.display == "none"
-        ? "block"
-        : "none";
-  });
+const btnHamburger = document.querySelector("#btnHamburger");
+
+btnHamburger.addEventListener("click", function () {
+  console.log("click hamburger");
+
+  if (btnHamburger.classList.contains("open")) {
+    btnHamburger.classList.remove("open");
+  } else {
+    btnHamburger.classList.add("open");
+  }
+});

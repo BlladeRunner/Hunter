@@ -13,12 +13,28 @@
 <body>
   <!-- HERO Section -->
   <div class="hero">
-    <nav class="hero__navbar">
-      <span class="hero__logo"><img src="img/Logo.svg" alt="Logo"></span>
-      <label for="" class="hero__hamburger-menu">
+    <div class="overlay"></div>
+    <nav class="flex flex-jc-sb flex-ai-c">
+      <a href="/" class="hero__logo">
+        <img src="img/Logo.svg" alt="Logo">
+      </a>
+
+      <a id="btnHamburger" class="hero__menu hide-for-desktop open" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+      <div class="hero__nav-links hide-for-mobile">
+        <a href="#">About Us</a>
+        <a href="#">Article</a>
+        <a href="#">Property</a>
+        <a href="#">Sign Up</a>
+      </div>
+
+      <!-- <label for="" class="hero__hamburger-menu">
         <input type="checkbox" />
       </label>
-
       <aside class="hero__sidebar">
         <nav>
           <div><a href="">About Us</a></div>
@@ -26,32 +42,28 @@
           <div><a href="">Property</a></div>
           <div><a href="">Sign Up</a></div>
         </nav>
-      </aside>
-      <!-- <ul class="hero__nav-menu hero__hamburger-menu">
-        <li class="hero__nav-item"><img src="/img/Logo.svg" alt="Logo"></li>
-        <li class="hero__nav-item">About Us</li>
-        <li class="hero__nav-item">Article</li>
-        <li class="hero__nav-item">Property</li>
-        <li class="hero__nav-item">Sign Up</li>
-      </ul> -->
-      <figure class="hero__image"></figure>
-      <div class="hero__reviews">
-        <div class="hero__review-1"><img src="img/1K_Peoples.svg" alt=""></div>
-        <div class="hero__review-2"><img src="img/56_Houses.svg" alt=""></div>
-        <div class="hero__review-3"><img src="img/4K_+.svg" alt=""></div>
-      </div>
+      </aside> -->
     </nav>
+    <!-- <div class="hero__reviews">
+      <div class="hero__review-1"><img src="img/1K_Peoples.svg" alt=""></div>
+      <div class="hero__review-2"><img src="img/56_Houses.svg" alt=""></div>
+      <div class="hero__review-3"><img src="img/4K_+.svg" alt=""></div>
+    </div> -->
 
-    <h1 class="heading-primary">
+    <!-- <h1 class="heading-primary">
       <span class="heading-primary-main">
-        Find The Place to Live <span class="green">Your Dreams</span> Easily Here
+        Find The Place To Live <span class="green">Your Dreams</span> Easily Here
       </span>
       <span class="heading-primary-sub">
         Everything you need about finding your place to live will be here,
         where it will be easier for you
       </span>
     </h1>
-    <input type="text" class="hero__search">
+    <figure class="hero__image"></figure> -->
+
+
+
+    <!-- <input type="text" class="hero__search">
     <div class="hero__partnership">
       <p class="hero__partnership-sub">Our Partnership</p>
       <ul class="hero__partner-logo">
@@ -60,9 +72,10 @@
         <li><a href=""><img src="img/traveloka_logo 4.svg" alt="Logo" /></a></li>
         <li><a href=""><img src="img/traveloka_logo 5.svg" alt="Logo" /></a></li>
       </ul>
-    </div>
+    </div> -->
   </div>
-
+  <div class="featured-house"></div>
+  <script src="script.js"></script>
 </body>
 
 </html>

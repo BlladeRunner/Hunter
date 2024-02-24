@@ -1,6 +1,8 @@
 @import "abstracts/mixins";
-@import "base/colors";
+@import "base/variables";
 @import "base/base";
+@import "base/button";
+@import "base/globals";
 
 //Layout
 @import "layout/hero";
