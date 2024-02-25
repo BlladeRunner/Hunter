@@ -12,3 +12,17 @@
     display: none;
   }
 }
+
+// Links
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+// Spacing
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
