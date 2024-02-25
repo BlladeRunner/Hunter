@@ -1,9 +1,26 @@
-// $hamburger-margin: 30px;
-// $hamburger-heigt: calc(50px * 3 + 6px * 2);
-// $animation-timing: 200ms ease-in-out;
-
 .hero {
-  background: linear-gradient(0.25turn, aqua, 50%, #89c5e1);
+  background-color: $color-white;
+
+  &.open {
+    .overlay {
+      display: block;
+      animation: fade-in 300ms ease-in-out forwards;
+    }
+
+    .hero__menu {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
 
   nav {
     padding: 46px;
@@ -11,6 +28,7 @@
 
   .flex {
     display: flex;
+    background: linear-gradient(0.25turn, aqua, 50%, #89c5e1);
 
     &-jc-sb {
       justify-content: space-between;
@@ -35,20 +53,6 @@
 
       &:not(:last-child) {
         margin-bottom: 6px;
-      }
-    }
-
-    &.open {
-      > span:first-child {
-        transform: rotate(45deg);
-      }
-
-      > span:nth-child(2) {
-        opacity: 0;
-      }
-
-      > span:last-child {
-        transform: rotate(-45deg);
       }
     }
   }
@@ -80,6 +84,18 @@
         background-color: $electric-blue;
       }
     }
+  }
+
+  .overlay {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 132px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(#9fe2bf, transparent);
+    animation: fade-in 300ms ease-in-out forwards;
   }
 
   // &__logo {
