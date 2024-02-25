@@ -15,4 +15,8 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   height: 95vh;
+
+  &.noscroll {
+    overflow: hidden;
+  }
 }
