@@ -1,0 +1,61 @@
+.hero {
+  font-family: "Inter", sans-serif;
+  &__text {
+    margin: 20px;
+    text-align: center;
+    h1 {
+      font-size: 36px;
+      font-weight: 900;
+      color: #1e1a55;
+      margin-bottom: 24px;
+    }
+    .green {
+      color: $color-primary;
+    }
+    p {
+      color: #8a8ba4;
+      text-shadow: 2px 2px 2px $color-lightgrey;
+      margin-bottom: 32px;
+    }
+  }
+  form {
+    position: relative;
+    margin-bottom: 32px;
+    align-items: center;
+    input {
+      align-self: center;
+      border: 1px solid $color-lightgrey;
+      border-radius: 50px;
+      height: 56px;
+      min-width: 412px;
+      &::placeholder {
+        text-align: center;
+        font-weight: 600;
+      }
+    }
+    button {
+      position: absolute;
+      top: 3px;
+      right: 1px;
+      bottom: 0;
+      color: $color-white;
+      padding: 0 35px;
+      height: 50px;
+
+      font-weight: 600;
+      border: none;
+      i {
+        margin-left: 20px;
+      }
+    }
+  }
+  &__partnership {
+    ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: column;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+}

@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -14,12 +16,15 @@
 
   <!-- Navbar Section -->
 
-  <div class="navbar">
+  <div class="navbar navbar__image">
+
     <div class="overlay has-fade"></div>
     <nav class="container flex flex-jc-sb flex-ai-c">
+
       <a href="/" class="navbar__logo">
         <img src="img/Logo.svg" alt="Logo">
       </a>
+
 
       <a id="btnHamburger" class="navbar__toggle hide-for-desktop open" href="#">
         <span></span>
@@ -35,6 +40,7 @@
       </div>
 
     </nav>
+
     <div class="navbar__menu has-fade">
       <a href="#">About Us</a>
       <a href="#">Article</a>
@@ -44,46 +50,42 @@
 
     <!-- Hero Section -->
 
-    <div>
+    <section class="hero">
 
-      <figure class="hero__image"></figure>
-      <p>
-        Find The Place To Live <span class="green">Your Dreams</span> Easily Here
-      </p>
+      <!-- <div class="hero__image"><img src="img/image_6.jpg" alt="image"></div> -->
 
-    </div>
-    <!-- <div class="hero__reviews">
-      <div class="hero__review-1"><img src="img/1K_Peoples.svg" alt=""></div>
-      <div class="hero__review-2"><img src="img/56_Houses.svg" alt=""></div>
-      <div class="hero__review-3"><img src="img/4K_+.svg" alt=""></div>
-    </div> -->
-
-    <!-- <h1 class="heading-primary">
-      <span class="heading-primary-main">
-        Find The Place To Live <span class="green">Your Dreams</span> Easily Here
-      </span>
-      <span class="heading-primary-sub">
-        Everything you need about finding your place to live will be here,
-        where it will be easier for you
-      </span>
-    </h1>
-    <figure class="hero__image"></figure> -->
+      <div class="hero__text">
+        <h1>
+          Find The Place To Live <span class="green">Your Dreams</span> Easily Here
+        </h1>
+        <p>
+          Everything you need about finding your place to live will be here,
+          where it will be easier for you
+        </p>
 
 
+        <form>
+          <input class="hero__search" type="search" placeholder="Search for the location you want!">
+          <button type="submit">Search <i class="fa fa-chevron-right"></i></button>
+        </form>
 
-    <!-- <input type="text" class="hero__search">
-    <div class="hero__partnership">
-      <p class="hero__partnership-sub">Our Partnership</p>
-      <ul class="hero__partner-logo">
-        <li><a href=""><img src="img/traveloka_logo 2.svg" alt="Logo" /></a></li>
-        <li><a href=""><img src="img/traveloka_logo 3.svg" alt="Logo" /></a></li>
-        <li><a href=""><img src="img/traveloka_logo 4.svg" alt="Logo" /></a></li>
-        <li><a href=""><img src="img/traveloka_logo 5.svg" alt="Logo" /></a></li>
-      </ul>
-    </div> -->
-  </div>
-  <div class="featured-house"></div>
-  <script src="script.js"></script>
+
+        <div class="hero__partnership">
+          <p class="hero__partnership-sub">Our Partnership</p>
+          <ul class="partner--logo">
+            <li><a href=""><img src="img/traveloka_logo 2.svg" alt="Logo" /></a></li>
+            <li><a href=""><img src="img/traveloka_logo 5.svg" alt="Logo" /></a></li>
+            <li><a href=""><img src="img/traveloka_logo 3.svg" alt="Logo" /></a></li>
+            <li><a href=""><img src="img/traveloka_logo 4.svg" alt="Logo" /></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>

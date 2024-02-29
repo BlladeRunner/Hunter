@@ -77,11 +77,11 @@ body {
   .navbar.open .overlay {
     opacity: 1;
     animation: fade-in 300ms ease-in-out forwards; }
-  .navbar.open .hero__toggle > span:first-child {
+  .navbar.open .navbar__toggle > span:first-child {
     transform: rotate(45deg); }
-  .navbar.open .hero__toggle > span:nth-child(2) {
+  .navbar.open .navbar__toggle > span:nth-child(2) {
     opacity: 0; }
-  .navbar.open .hero__toggle > span:last-child {
+  .navbar.open .navbar__toggle > span:last-child {
     transform: rotate(-45deg); }
   .navbar .overlay {
     opacity: 0;
@@ -97,13 +97,14 @@ body {
     .navbar .overlay.fade-out {
       display: none; }
   .navbar nav {
-    position: relative;
-    background-color: white;
-    padding-top: 46px;
-    padding-bottom: 46px; }
+    background-color: white; }
   .navbar .flex {
     display: flex;
-    background: linear-gradient(0.25turn, aqua, 50%, #89c5e1); }
+    background: url(/img/image_6.jpg);
+    background-repeat: no-repeat;
+    height: 600px;
+    background-position: top left;
+    background-size: cover; }
     .navbar .flex-jc-sb {
       justify-content: space-between; }
     .navbar .flex-ai-c {
@@ -153,8 +154,51 @@ body {
         background-color: #0fff50; }
     .navbar__nav-links a:hover {
       background-color: #7df9ff; }
-  .navbar__image {
-    background-image: url("/img/image_6.jpg");
-    height: 720px;
-    width: 720px;
-    margin-bottom: 40px; }
+
+.hero {
+  font-family: "Inter", sans-serif; }
+  .hero__text {
+    margin: 20px;
+    text-align: center; }
+    .hero__text h1 {
+      font-size: 36px;
+      font-weight: 900;
+      color: #1e1a55;
+      margin-bottom: 24px; }
+    .hero__text .green {
+      color: #10b981; }
+    .hero__text p {
+      color: #8a8ba4;
+      text-shadow: 2px 2px 2px lightgrey;
+      margin-bottom: 32px; }
+  .hero form {
+    position: relative;
+    margin-bottom: 32px;
+    align-items: center; }
+    .hero form input {
+      align-self: center;
+      border: 1px solid lightgrey;
+      border-radius: 50px;
+      height: 56px;
+      min-width: 412px; }
+      .hero form input::placeholder {
+        text-align: center;
+        font-weight: 600; }
+    .hero form button {
+      position: absolute;
+      top: 3px;
+      right: 1px;
+      bottom: 0;
+      color: white;
+      padding: 0 35px;
+      height: 50px;
+      font-weight: 600;
+      border: none; }
+      .hero form button i {
+        margin-left: 20px; }
+  .hero__partnership ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: column;
+    justify-content: center;
+    gap: 20px; }
