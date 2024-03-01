@@ -90,7 +90,7 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-    background: linear-gradient(#9fe2bf, transparent);
+    background: linear-gradient(#8cc6e1, transparent);
     animation: fade-out 300ms ease-in-out forwards; }
     .navbar .overlay.fade-in {
       display: block; }
@@ -102,13 +102,13 @@ body {
     display: flex;
     background: url(/img/image_6.jpg);
     background-repeat: no-repeat;
-    height: 600px;
-    background-position: top left;
-    background-size: cover; }
+    height: 720px;
+    background-position: top right;
+    background-size: contain; }
     .navbar .flex-jc-sb {
       justify-content: space-between; }
     .navbar .flex-ai-c {
-      align-items: center; }
+      padding-top: 39px; }
   .navbar__toggle > span {
     display: block;
     width: 48px;
@@ -123,16 +123,17 @@ body {
     position: absolute;
     width: calc(100% - 80px);
     left: 50%;
+    top: 125px;
     transform: translateX(-50%);
-    background-color: white;
-    margin-top: 25px;
+    background-color: #1ca9c9;
+    color: white;
     padding: 26px;
     border-radius: 10px; }
     .navbar__menu a {
       display: block;
       padding: 10px;
       font-size: 20px;
-      color: #097969;
+      color: white;
       text-align: center; }
   .navbar__nav-links a {
     font-size: 14px;
@@ -153,11 +154,12 @@ body {
       .navbar__nav-links a:last-child:hover {
         background-color: #0fff50; }
     .navbar__nav-links a:hover {
-      background-color: #7df9ff; }
+      background-color: #1ca9c9; }
 
 .hero {
   font-family: "Inter", sans-serif; }
   .hero__text {
+    margin-top: 0;
     margin: 20px;
     text-align: center; }
     .hero__text h1 {

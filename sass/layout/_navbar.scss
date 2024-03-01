@@ -29,7 +29,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background: linear-gradient(#9fe2bf, transparent);
+    background: linear-gradient($color-light-blue, transparent);
     animation: fade-out 300ms ease-in-out forwards;
 
     &.fade-in {
@@ -49,16 +49,16 @@
     display: flex;
     background: url(/img/image_6.jpg);
     background-repeat: no-repeat;
-    height: 600px;
-    background-position: top left;
-    background-size: cover;
+    height: 720px;
+    background-position: top right;
+    background-size: contain;
 
     &-jc-sb {
       justify-content: space-between;
     }
 
     &-ai-c {
-      align-items: center;
+      padding-top: 39px;
     }
   }
 
@@ -82,17 +82,17 @@
     position: absolute;
     width: calc(100% - 80px);
     left: 50%;
+    top: 125px;
     transform: translateX(-50%);
-    background-color: $color-white;
-    margin-top: 25px;
+    background-color: $color-pacific-blue;
+    color: $color-white;
     padding: 26px;
     border-radius: 10px;
-
     a {
       display: block;
       padding: 10px;
       font-size: 20px;
-      color: #097969;
+      color: $color-white;
       text-align: center;
     }
   }
@@ -121,7 +121,7 @@
       }
 
       &:hover {
-        background-color: $electric-blue;
+        background-color: $color-pacific-blue;
       }
     }
   }
