@@ -161,6 +161,9 @@ body {
       .navbar__menu a:last-child {
         color: #0fff50;
         font-weight: 900; }
+  .navbar__reviews {
+    display: flex;
+    bottom: 50px; }
   .navbar__nav-links {
     margin-top: 20px;
     margin-right: 124px; }
