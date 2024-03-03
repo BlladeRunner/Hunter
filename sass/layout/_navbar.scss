@@ -53,14 +53,17 @@
     display: flex;
     background: url(/img/image_6.jpg);
     background-repeat: no-repeat;
-    background-position: top right;
-    background-size: contain;
+    background-position: top center;
+    background-size: 100%;
+    min-height: 100vw;
 
     @include breakpoint-up(large) {
       flex: 1;
       order: 2;
       min-height: 720px;
       min-width: 50%;
+      background-position: top right;
+      background-size: 100% 100%;
     }
 
     &-jc-sb {
@@ -69,6 +72,13 @@
 
     &-ai-c {
       padding-top: 39px;
+    }
+  }
+
+  &__logo {
+    @include breakpoint-up(large) {
+      margin-left: -625px;
+      margin-top: 20px;
     }
   }
 
@@ -104,11 +114,16 @@
       font-size: 20px;
       color: $color-white;
       text-align: center;
+      &:last-child {
+        color: #0fff50;
+        font-weight: 900;
+      }
     }
   }
 
   &__nav-links {
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-right: 124px;
     a {
       font-size: $font-med;
       border-style: solid;
@@ -118,7 +133,7 @@
       color: $color-white;
       padding: 8px 20px;
       font-weight: 600;
-      margin: 0 24px;
+      margin-left: 24px;
       transition: color 200ms ease-in-out;
 
       &:last-child {
