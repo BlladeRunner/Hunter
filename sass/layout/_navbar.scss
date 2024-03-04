@@ -108,12 +108,18 @@
     color: $color-white;
     padding: 26px;
     border-radius: 10px;
+
     a {
       display: block;
       padding: 10px;
       font-size: 20px;
       color: $color-white;
       text-align: center;
+      .property {
+        background-color: red;
+        content: "\f107";
+        padding-left: 4px;
+      }
       &:last-child {
         color: #0fff50;
         font-weight: 900;
@@ -123,9 +129,13 @@
 
   &__reviews {
     display: flex;
-    bottom: 50px;
+    position: relative;
+    bottom: 160px;
+    right: 30px;
     @include breakpoint-up(large) {
-      // right: 50px;
+      position: absolute;
+      bottom: 190px;
+      left: 940px;
     }
   }
 

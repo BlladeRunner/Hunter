@@ -89,7 +89,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   box-sizing: border-box;
-  background-color: hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 100%);
   font-size: 16px;
   max-width: 1440px;
   margin: 0 auto;
@@ -200,13 +200,27 @@ body.noscroll {
   color: hsl(0, 0%, 100%);
   text-align: center;
 }
+.navbar__menu a .property {
+  background-color: red;
+  content: "\f107";
+  padding-left: 4px;
+}
 .navbar__menu a:last-child {
   color: #0fff50;
   font-weight: 900;
 }
 .navbar__reviews {
   display: flex;
-  bottom: 50px;
+  position: relative;
+  bottom: 160px;
+  right: 30px;
+}
+@media (min-width: 64em) {
+  .navbar__reviews {
+    position: absolute;
+    bottom: 190px;
+    left: 940px;
+  }
 }
 .navbar__nav-links {
   margin-top: 20px;
@@ -305,7 +319,7 @@ body.noscroll {
 .hero form button {
   position: absolute;
   top: 3px;
-  right: 1px;
+  right: 39px;
   bottom: 0;
   color: hsl(0, 0%, 100%);
   padding: 0 15px;
