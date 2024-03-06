@@ -12,7 +12,8 @@
     @include breakpoint-up(large) {
       flex: 1;
       order: 1;
-      margin: 182px 100px 0 124px;
+      text-align: left;
+      margin: 190px 100px 0 124px;
     }
     margin-top: 0;
     margin: 20px;
@@ -40,7 +41,7 @@
       line-height: 1.5;
     }
   }
-  form {
+  &__form {
     position: relative;
     margin-bottom: 32px;
     align-items: center;
@@ -48,36 +49,38 @@
       align-self: center;
       border: 1px solid $color-lightgrey;
       border-radius: 50px;
+      padding-right: 100px;
       height: 56px;
-      min-width: 337px;
-      right: 25;
+      width: 400px;
+      right: 25px;
       margin-bottom: 40px;
       &::placeholder {
         font-weight: 600;
         text-align: center;
-        content: "*";
       }
       @include breakpoint-up(large) {
         width: 496px;
         margin-bottom: 88px;
       }
     }
-    button {
+    .btn {
       position: absolute;
       top: 3px;
-      right: 39px;
-      bottom: 0;
+      right: 8px;
       color: $color-white;
       padding: 0 15px;
       height: 50px;
+      width: 120px;
       font-weight: 600;
       border: none;
+      cursor: pointer;
       @include breakpoint-up(large) {
+        height: 50px;
         width: 150px;
         right: 3px;
       }
       i {
-        margin-left: 8px;
+        margin-left: 10px;
         @include breakpoint-up(large) {
           margin-left: 17px;
         }
