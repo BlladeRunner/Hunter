@@ -111,6 +111,8 @@ body {
     background-color: white; }
   .navbar .flex {
     display: flex;
+    flex: 1;
+    order: 2;
     background: url(/img/image_6.jpg);
     background-repeat: no-repeat;
     background-position: top center;
@@ -118,8 +120,6 @@ body {
     min-height: 100vw; }
     @media (min-width: 64em) {
       .navbar .flex {
-        flex: 1;
-        order: 2;
         min-height: 720px;
         min-width: 50%;
         background-position: top right;
@@ -240,7 +240,7 @@ body {
     align-self: center;
     border: 1px solid lightgrey;
     border-radius: 50px;
-    padding-right: 100px;
+    padding-right: 85px;
     height: 56px;
     width: 400px;
     right: 25px;
@@ -251,7 +251,8 @@ body {
     @media (min-width: 64em) {
       .hero__form input {
         width: 496px;
-        margin-bottom: 88px; } }
+        margin-bottom: 88px;
+        padding-right: 150px; } }
   .hero__form .btn {
     position: absolute;
     top: 3px;
@@ -273,6 +274,10 @@ body {
       @media (min-width: 64em) {
         .hero__form .btn i {
           margin-left: 17px; } }
+  .hero__form .map-marker {
+    position: absolute;
+    top: 15px;
+    left: 20px; }
 
 .hero__partnership ul {
   display: flex;

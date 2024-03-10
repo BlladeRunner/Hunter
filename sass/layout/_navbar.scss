@@ -51,6 +51,8 @@
 
   .flex {
     display: flex;
+    flex: 1;
+    order: 2;
     background: url(/img/image_6.jpg);
     background-repeat: no-repeat;
     background-position: top center;
@@ -58,8 +60,6 @@
     min-height: 100vw;
 
     @include breakpoint-up(large) {
-      flex: 1;
-      order: 2;
       min-height: 720px;
       min-width: 50%;
       background-position: top right;
