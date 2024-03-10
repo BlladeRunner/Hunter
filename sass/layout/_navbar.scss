@@ -121,8 +121,16 @@
         padding-left: 4px;
       }
       &:last-child {
-        color: #0fff50;
-        font-weight: 900;
+        color: $color-white;
+        border: 2px solid $color-primary;
+        border-radius: 30px;
+        background-color: $color-primary;
+        &:hover {
+          background-color: $dark-green;
+        }
+      }
+      &:hover {
+        color: $color-white-linen;
       }
     }
   }

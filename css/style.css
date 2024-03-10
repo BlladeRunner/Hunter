@@ -163,8 +163,14 @@ body {
         content: "\f107";
         padding-left: 4px; }
       .navbar__menu a:last-child {
-        color: #0fff50;
-        font-weight: 900; }
+        color: white;
+        border: 2px solid #10b981;
+        border-radius: 30px;
+        background-color: #10b981; }
+        .navbar__menu a:last-child:hover {
+          background-color: #009468; }
+      .navbar__menu a:hover {
+        color: #e5e4e2; }
   .navbar__reviews {
     display: flex;
     position: relative;
