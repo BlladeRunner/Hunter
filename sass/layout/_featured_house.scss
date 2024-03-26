@@ -1,0 +1,21 @@
+.featured-house {
+  //   margin-top: 120px;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: red;
+    a {
+      color: red;
+      //   font-size: $font-med;
+      //   border-style: solid;
+      //   border-width: 2px;
+      //   border-color: $color-white;
+      //   border-radius: 30px;
+      //   color: $color-white;
+      //   padding: 8px 20px;
+      //   font-weight: 600;
+      //   margin-left: 24px;
+    }
+  }
+}
