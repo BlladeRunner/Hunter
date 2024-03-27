@@ -1,5 +1,8 @@
 .featured-house {
-  //   margin-top: 120px;
+  background-color: red;
+  @include breakpoint-up(large) {
+    position: absolute;
+  }
   &__nav {
     display: flex;
     justify-content: space-between;
@@ -7,15 +10,14 @@
     color: red;
     a {
       color: red;
-      //   font-size: $font-med;
-      //   border-style: solid;
-      //   border-width: 2px;
-      //   border-color: $color-white;
-      //   border-radius: 30px;
-      //   color: $color-white;
-      //   padding: 8px 20px;
-      //   font-weight: 600;
-      //   margin-left: 24px;
     }
+    &.btn {
+      height: 35px;
+      color: red;
+    }
+  }
+  &__houses {
+    background-color: red;
+    margin-bottom: 50px;
   }
 }

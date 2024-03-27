@@ -259,8 +259,12 @@ body.noscroll {
   background-color: #1ca9c9;
 }
 
+.hero {
+  margin-bottom: 80px;
+}
 @media (min-width: 64em) {
   .hero {
+    margin-bottom: 120px;
     background: linear-gradient(155deg, #d0fcfa 160px, #ccfdf1 80px, #fff 450px);
   }
 }
