@@ -1,23 +1,23 @@
 .featured-house {
-  background-color: red;
   @include breakpoint-up(large) {
+    top: 0;
     position: absolute;
   }
   &__nav {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    color: red;
     a {
-      color: red;
+      border: 2px solid green;
+      border-radius: 20px;
+      padding: 8px;
+      color: $dark-green;
     }
     &.btn {
       height: 35px;
-      color: red;
     }
   }
   &__houses {
-    background-color: red;
     margin-bottom: 50px;
   }
 }

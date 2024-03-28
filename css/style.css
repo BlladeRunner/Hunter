@@ -159,7 +159,6 @@ body {
       color: white;
       text-align: center; }
       .navbar__menu a .property {
-        background-color: red;
         content: "\f107";
         padding-left: 4px; }
       .navbar__menu a:last-child {
@@ -209,7 +208,6 @@ body {
   margin-bottom: 80px; }
   @media (min-width: 64em) {
     .hero {
-      margin-bottom: 120px;
       background: linear-gradient(155deg, #d0fcfa 160px, #ccfdf1 80px, #fff 450px); } }
   .hero__text {
     margin-top: 0;
@@ -295,3 +293,23 @@ body {
       .hero__partnership ul {
         justify-content: left;
         gap: 32px; } }
+
+@media (min-width: 64em) {
+  .featured-house {
+    top: 0;
+    position: absolute; } }
+
+.featured-house__nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; }
+  .featured-house__nav a {
+    border: 2px solid green;
+    border-radius: 20px;
+    padding: 8px;
+    color: #009468; }
+  .featured-house__nav.btn {
+    height: 35px; }
+
+.featured-house__houses {
+  margin-bottom: 50px; }
