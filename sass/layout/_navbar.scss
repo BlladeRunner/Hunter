@@ -58,9 +58,12 @@
     background-position: top center;
     background-size: 100%;
     min-height: 100vw;
-
+    @include breakpoint-up(medium) {
+      height: 550px;
+      min-width: 35%;
+    }
     @include breakpoint-up(large) {
-      min-height: 720px;
+      min-height: 800px;
       min-width: 50%;
       background-position: top right;
       background-size: 100% 100%;
@@ -116,7 +119,6 @@
       color: $color-white;
       text-align: center;
       .property {
-        // background-color: red;
         content: "\f107";
         padding-left: 4px;
       }
