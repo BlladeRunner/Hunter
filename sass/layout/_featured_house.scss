@@ -46,6 +46,7 @@
       &:hover {
         background-color: $light-green;
         padding: 12px 28px;
+        border: none;
       }
     }
     .nav-buttons {
@@ -64,6 +65,7 @@
           color: $color-primary;
           font-size: 20px;
           align-items: center;
+          vertical-align: middle;
         }
         &:hover {
           background-color: $color-primary;

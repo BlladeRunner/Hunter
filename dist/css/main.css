@@ -439,6 +439,7 @@ body.noscroll {
 .featured-house__nav a:hover {
   background-color: #d0f9e5;
   padding: 12px 28px;
+  border: none;
 }
 .featured-house__nav .nav-buttons {
   margin-top: 40px;
@@ -457,6 +458,7 @@ body.noscroll {
   color: #10b981;
   font-size: 20px;
   align-items: center;
+  vertical-align: middle;
 }
 .featured-house__nav .nav-buttons button:hover {
   background-color: #10b981;
