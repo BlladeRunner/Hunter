@@ -14,15 +14,20 @@
       .header-secondary {
         margin-top: 12px;
         margin-left: 14px;
-        font-size: 22px;
+        font-size: 28px;
         font-weight: 600;
       }
     }
     .nav-items {
       text-align: center;
       margin-top: 40px;
+
       @include breakpoint-up(large) {
         margin-left: 50px;
+      }
+      img {
+        margin-right: 8px;
+        vertical-align: middle;
       }
     }
     @include breakpoint-up(large) {
@@ -31,21 +36,39 @@
       flex-direction: row;
     }
     a {
-      border: 1px solid green;
-      border-radius: 20px;
-      padding: 8px 15px;
+      border: 1px solid $color-primary;
+      border-radius: 28px;
+      padding: 12px 20px;
       color: $dark-green;
       margin-left: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      &:hover {
+        background-color: $light-green;
+        padding: 12px 28px;
+      }
     }
     .nav-buttons {
       margin-top: 40px;
       margin-bottom: 40px;
+
       button {
         height: 48px;
         width: 48px;
         align-items: center;
         margin-left: 10px;
-        border: none;
+        border: 1px solid $color-primary;
+        background-color: $color-white;
+        &:after {
+          content: "\276F";
+          color: $color-primary;
+          font-size: 20px;
+          align-items: center;
+        }
+        &:hover {
+          background-color: $color-primary;
+          color: $color-white;
+        }
       }
     }
   }
