@@ -1,5 +1,5 @@
 .hero {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   @include breakpoint-up(large) {
     background: linear-gradient(
       155deg,
@@ -27,6 +27,7 @@
       color: #1e1a55;
       word-spacing: 7px;
       margin-bottom: 24px;
+      margin-top: -160px;
       @include breakpoint-up(large) {
         margin-right: 5ch;
         text-align: left;
