@@ -349,8 +349,7 @@ body {
     border: none; }
 
 .featured-house__nav .nav-buttons {
-  margin-top: 40px;
-  margin-bottom: 40px; }
+  margin-top: 40px; }
   .featured-house__nav .nav-buttons button {
     height: 48px;
     width: 48px;
@@ -371,3 +370,9 @@ body {
 .featured-house__houses {
   margin-bottom: 50px;
   text-align: center; }
+  .featured-house__houses .scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    list-style-type: none; }
+    .featured-house__houses .scroll-container img {
+      padding: 32px; }

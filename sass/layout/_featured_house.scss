@@ -51,7 +51,6 @@
     }
     .nav-buttons {
       margin-top: 40px;
-      margin-bottom: 40px;
 
       button {
         height: 48px;
@@ -77,5 +76,13 @@
   &__houses {
     margin-bottom: 50px;
     text-align: center;
+    .scroll-container {
+      display: flex;
+      overflow-x: scroll;
+      list-style-type: none;
+      img {
+        padding: 32px;
+      }
+    }
   }
 }
