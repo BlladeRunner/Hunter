@@ -410,6 +410,7 @@ body.noscroll {
 .featured-house__nav .nav-items {
   text-align: center;
   margin-top: 40px;
+  transition: color 0.8s;
 }
 @media (min-width: 64em) {
   .featured-house__nav .nav-items {
@@ -429,6 +430,7 @@ body.noscroll {
 }
 .featured-house__nav a {
   border: 1px solid #10b981;
+  transition: background-color 0.8s;
   border-radius: 28px;
   padding: 12px 20px;
   color: #009468;
@@ -438,7 +440,6 @@ body.noscroll {
 }
 .featured-house__nav a:hover {
   background-color: #d0f9e5;
-  padding: 12px 28px;
   border: none;
 }
 .featured-house__nav .nav-buttons {
@@ -451,6 +452,7 @@ body.noscroll {
   margin-left: 10px;
   border: 1px solid #10b981;
   background-color: hsl(0, 0%, 100%);
+  transition: background-color 0.3s;
 }
 .featured-house__nav .nav-buttons button:after {
   content: "❯";
