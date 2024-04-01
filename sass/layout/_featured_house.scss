@@ -39,6 +39,7 @@
     a {
       border: 1px solid $color-primary;
       transition: background-color 0.8s;
+      transition: border 5s;
       border-radius: 28px;
       padding: 12px 20px;
       color: $dark-green;
@@ -56,22 +57,43 @@
       button {
         height: 48px;
         width: 48px;
-        align-items: center;
         margin-left: 10px;
         border: 1px solid $color-primary;
         background-color: $color-white;
         transition: background-color 0.3s;
 
-        &:after {
-          content: "\276F";
-          color: $color-primary;
-          font-size: 20px;
-          align-items: center;
-          vertical-align: middle;
+        &.prev::before {
+          content: " ";
+          border-left: 2px solid $color-primary;
+          border-bottom: 2px solid $color-primary;
+          width: 12px;
+          height: 12px;
+          transform: rotate(45deg);
+          cursor: pointer;
+          display: block;
+          margin-left: 14px;
+        }
+        &.next::before {
+          content: " ";
+          border-right: 2px solid $color-primary;
+          border-top: 2px solid $color-primary;
+          width: 12px;
+          height: 12px;
+          transform: rotate(45deg);
+          margin-left: 10px;
+          cursor: pointer;
+          display: block;
         }
         &:hover {
           background-color: $color-primary;
-          color: $color-white;
+          &::before {
+            border-right: 2px solid $color-white;
+            border-top: 2px solid $color-white;
+          }
+          &::before {
+            border-right: 2px solid $color-white;
+            border-top: 2px solid $color-white;
+          }
         }
       }
     }
