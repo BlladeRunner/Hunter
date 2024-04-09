@@ -497,4 +497,8 @@ body.noscroll {
 }
 .featured-house__houses .scroll-container img {
   padding: 32px;
+}
+.featured-house__houses .scroll-container .house-description {
+  margin-bottom: 20px;
+  margin-top: 0;
 }/*# sourceMappingURL=main.css.map */

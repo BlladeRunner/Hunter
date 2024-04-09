@@ -397,3 +397,6 @@ body {
     list-style-type: none; }
     .featured-house__houses .scroll-container img {
       padding: 32px; }
+    .featured-house__houses .scroll-container .house-description {
+      margin-bottom: 20px;
+      margin-top: 0; }
