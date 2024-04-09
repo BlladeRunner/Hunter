@@ -398,5 +398,19 @@ body {
     .featured-house__houses .scroll-container img {
       padding: 32px; }
     .featured-house__houses .scroll-container .house-description {
+      text-align: left;
+      margin-left: 32px;
       margin-bottom: 20px;
       margin-top: 0; }
+      .featured-house__houses .scroll-container .house-description .house-title {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 8px; }
+      .featured-house__houses .scroll-container .house-description .house-price {
+        font-size: 18px;
+        font-weight: 500;
+        color: #636586; }
+      .featured-house__houses .scroll-container .house-description .house-owner img {
+        align-items: center; }
+      .featured-house__houses .scroll-container .house-description .house-owner .owner-name {
+        font-weight: 600; }

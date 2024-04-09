@@ -109,8 +109,28 @@
         padding: 32px;
       }
       .house-description {
+        text-align: left;
+        margin-left: 32px;
         margin-bottom: 20px;
         margin-top: 0;
+        .house-title {
+          font-size: 22px;
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+        .house-price {
+          font-size: 18px;
+          font-weight: 500;
+          color: $color-grey;
+        }
+        .house-owner {
+          img {
+            align-items: center;
+          }
+          .owner-name {
+            font-weight: 600;
+          }
+        }
       }
     }
   }
