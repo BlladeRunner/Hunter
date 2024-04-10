@@ -1,0 +1,45 @@
+@media (min-width: 64em) {
+}
+
+$breakpoints: (
+  "xs": 0,
+  "sm": 480px,
+  "lg": 960px,
+  "xl": 1200px,
+);
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints, "xs"));
+}
+
+// 320px, 425px, 768px, 1024px, 1440px
+// $breakpoints-up: (
+//   "small": "425px",
+//   //425px
+//   "medium": "768px",
+//   //768
+//   "large": "1024px",
+//   //1024
+//   "xlarge": "1440px",
+//   //1440
+// );
+
+// // 639px, 1023px, 1399px
+// $breakpoints-down: (
+//   "small": "426px",
+//   "medium": "769px",
+//   "large": "1025px",
+//   "xlarge": "1441px",
+// );
+
+// @mixin breakpoint-up($size) {
+//   @media (min-width: map-get($breakpoints-up, $size)) {
+//     @content;
+//   }
+// }
+
+// @mixin breakpoint-down($size) {
+//   @media (max-width: map-get($breakpoints-down, $size)) {
+//     @content;
+//   }
+// }

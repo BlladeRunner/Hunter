@@ -52,13 +52,15 @@
       border: 1px solid $color-lightgrey;
       border-radius: 50px;
       padding-right: 85px;
-      height: 56px;
-      width: 400px;
-      right: 25px;
-      margin-bottom: 40px;
+      height: 46px;
+      width: 280px;
+      right: 35px;
+      margin-bottom: 30px;
       &::placeholder {
         font-weight: 600;
+        font-size: 10px;
         text-align: center;
+        // padding-right: 100px;
       }
       @include breakpoint-up(large) {
         width: 496px;
@@ -69,11 +71,11 @@
     .btn {
       position: absolute;
       top: 3px;
-      right: 8px;
+      right: 3px;
       color: $color-white;
-      padding: 0 15px;
-      height: 50px;
-      width: 120px;
+      padding: 0 10px;
+      height: 40px;
+      // width: 120px;
       font-weight: 600;
       border: none;
       cursor: pointer;
