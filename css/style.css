@@ -382,11 +382,8 @@ body {
     .featured-house__nav .nav-buttons button:hover {
       background-color: #10b981; }
       .featured-house__nav .nav-buttons button:hover::before {
-        border-right: 2px solid white;
-        border-top: 2px solid white; }
-      .featured-house__nav .nav-buttons button:hover::before {
-        border-right: 2px solid white;
-        border-top: 2px solid white; }
+        border-top: 2px solid white;
+        border-right: 2px solid white; }
 
 .featured-house__houses {
   margin-bottom: 50px;
@@ -410,7 +407,14 @@ body {
         font-size: 18px;
         font-weight: 500;
         color: #636586; }
-      .featured-house__houses .scroll-container .house-description .house-owner img {
-        align-items: center; }
-      .featured-house__houses .scroll-container .house-description .house-owner .owner-name {
-        font-weight: 600; }
+      .featured-house__houses .scroll-container .house-description .house-owner {
+        position: relative; }
+        .featured-house__houses .scroll-container .house-description .house-owner img {
+          float: left; }
+        .featured-house__houses .scroll-container .house-description .house-owner .owner-info {
+          position: absolute;
+          top: 30px;
+          right: 150px; }
+          .featured-house__houses .scroll-container .house-description .house-owner .owner-info .owner-name {
+            font-weight: 600;
+            margin-bottom: 5px; }

@@ -73,6 +73,7 @@
           display: block;
           margin-left: 14px;
         }
+
         &.next::before {
           content: " ";
           border-right: 2px solid $color-primary;
@@ -87,12 +88,8 @@
         &:hover {
           background-color: $color-primary;
           &::before {
-            border-right: 2px solid $color-white;
             border-top: 2px solid $color-white;
-          }
-          &::before {
             border-right: 2px solid $color-white;
-            border-top: 2px solid $color-white;
           }
         }
       }
@@ -124,11 +121,20 @@
           color: $color-grey;
         }
         .house-owner {
+          position: relative;
+
           img {
-            align-items: center;
+            float: left;
           }
-          .owner-name {
-            font-weight: 600;
+
+          .owner-info {
+            position: absolute;
+            top: 30px;
+            right: 150px;
+            .owner-name {
+              font-weight: 600;
+              margin-bottom: 5px;
+            }
           }
         }
       }
