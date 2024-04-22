@@ -1,5 +1,5 @@
 .featured-house {
-  @include breakpoint-up(large) {
+  @include mq(lg) {
     bottom: 0;
     position: absolute;
     margin-top: 120px;
@@ -23,7 +23,7 @@
       margin-top: 40px;
       transition: color 0.8s;
 
-      @include breakpoint-up(large) {
+      @include mq(lg) {
         margin-left: 50px;
       }
       img {
@@ -31,7 +31,7 @@
         vertical-align: middle;
       }
     }
-    @include breakpoint-up(large) {
+    @include mq(lg) {
       display: flex;
       justify-content: space-between;
       flex-direction: row;

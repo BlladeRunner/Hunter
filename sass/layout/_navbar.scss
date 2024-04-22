@@ -1,9 +1,9 @@
 .navbar {
   background-color: $color-white;
-  @include breakpoint-up(small) {
+  @include mq(xs) {
     min-width: 425px;
   }
-  @include breakpoint-up(large) {
+  @include mq(lg) {
     display: flex;
     align-items: center;
   }
@@ -60,17 +60,12 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100%;
-    min-height: 100vw;
-    @include breakpoint-up(small) {
-      background-size: 100%;
+    min-height: 70vh;
+    min-width: 100vw;
+    @include mq(md) {
+      min-width: 80vw;
     }
-    @include breakpoint-up(medium) {
-      height: 550px;
-      min-width: 35%;
-      background-size: 100%;
-      height: 50px;
-    }
-    @include breakpoint-up(large) {
+    @include mq(lg) {
       min-height: 800px;
       min-width: 50%;
       background-position: top right;
@@ -87,7 +82,7 @@
   }
 
   &__logo {
-    @include breakpoint-up(large) {
+    @include mq(lg) {
       margin-left: -625px;
       margin-top: 20px;
     }
@@ -105,6 +100,18 @@
 
       &:not(:last-child) {
         margin-bottom: 6px;
+      }
+      @include mq(sm) {
+        display: block;
+      }
+      @include mq(md) {
+        display: block;
+      }
+      @include mq(xl) {
+        display: none;
+      }
+      @include mq(xxl) {
+        display: none;
       }
     }
   }
@@ -150,7 +157,7 @@
     position: relative;
     bottom: 160px;
     right: 30px;
-    @include breakpoint-up(large) {
+    @include mq(lg) {
       position: absolute;
       bottom: 190px;
       left: 940px;
@@ -160,6 +167,12 @@
   &__nav-links {
     margin-top: 20px;
     margin-right: 124px;
+    @include mq(sm) {
+      display: none;
+    }
+    @include mq(md) {
+      display: none;
+    }
     a {
       font-size: $font-med;
       border-style: solid;

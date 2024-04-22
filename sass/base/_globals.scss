@@ -1,14 +1,14 @@
 // Visibility
 .hide-for-mobile {
   // hide for mobile viewport width
-  @include breakpoint-down(medium) {
+  @include mq(xs) {
     display: none;
   }
 }
 
 .hide-for-desktop {
   // hide for desktop viewport width
-  @include breakpoint-up(large) {
+  @include mq(lg) {
     display: none;
   }
 }
